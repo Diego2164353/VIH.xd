@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIH - Concientización</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        section {
+            display: none;
+            padding: 60px 40px;
+            min-height: 100vh;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        section:target {
+            display: block;
+        }
+        nav {
+            margin-top: 40px;
+        }
+        nav a {
+            display: inline-block;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: darkred;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        img, iframe {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        ul li::before {
+            content: "🧑‍⚕️";
+        }
+
+        /* Colores por slide */
+        #slider1 { background-color: #410604; }
+        #slider2 { background-color: #5a0000; }
+        #slider3 { background-color: #5a0000; }
+        #slider4 { background-color: #5a0000; }
+        #slider5 { background-color: #5a0000; }
+        #slider6 { background-color: #5a0000; }
+
+        body:not(:target) #slider1 {
+            display: block;
+        }
+        .mi-imagen {
+        width: 900px;
+        height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Portada -->
+<section id="slider1">
+    <h1>VIH: Infórmate, Previene y Comparte</h1>
+    <p>El VIH (Virus de Inmunodeficiencia Humana) es un virus que ataca el sistema inmunológico, debilitando las defensas del cuerpo y haciéndolo vulnerable a infecciones y enfermedades. Se transmite principalmente por relaciones sexuales sin protección, contacto con sangre infectada o de madre a hijo durante el embarazo, parto o lactancia. Aunque no tiene cura, existe tratamiento antirretroviral que permite a las personas vivir muchos años con buena calidad de vida y evita que la infección avance a SIDA (Síndrome de Inmunodeficiencia Adquirida). La prevención mediante el uso de preservativos, las pruebas regulares y el acceso a tratamiento son fundamentales para controlar su propagación.</p>
+    <img src="https://www.vostv.com.ni/media/news/509813be970d11efa46f567103a612d1.png" class="mi-imagen" alt="Concientización sobre el VIH">
+    <nav>
+        <a href="#slider2">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 2: ¿Qué es el VIH? -->
+<section id="slider2">
+    <h2>¿Qué es el VIH?</h2>
+    <ul>
+        <li>VIH significa Virus de Inmunodeficiencia Humana.</li>
+        <li>Ataca el sistema inmunológico.</li>
+        <li>No tiene cura, pero el tratamiento puede controlarlo.</li>
+        <li>No es lo mismo que SIDA.</li>
+    </ul>
+    <nav>
+        <a href="#slider1">Anterior</a>
+        <a href="#slider3">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 3: Mitos y Verdades -->
+<section id="slider3">
+    <h2>Mitos y Verdades</h2>
+    <ul>
+        <li>No se transmite por abrazos, besos ni compartir cubiertos.</li>
+        <li>Usar condón reduce drásticamente el riesgo.</li>
+        <li>Las personas con VIH pueden tener una vida plena.</li>
+        <li>Hacerse la prueba es un acto de responsabilidad.</li>
+    </ul>
+    <nav>
+        <a href="#slider2">Anterior</a>
+        <a href="#slider4">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 4: El Lazo Rojo -->
+<section id="slider4">
+    <h2>El Lazo Rojo</h2>
+    <p>Este lazo representa apoyo y solidaridad con quienes viven con VIH.</p>
+    <img src="https://media.radio10.com.ar/p/e773d38caf0e3485835981dc37add75d/adjuntos/220/imagenes/040/328/0040328645/730x0/smart/lazo-rojo-sidajpeg.jpeg" alt="Lazo rojo VIH">
+    <nav>
+        <a href="#slider3">Anterior</a>
+        <a href="#slider5">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 5: Video educativo -->
+<section id="slider5">
+    <h2>Video: ¿Qué es el VIH y cómo prevenirlo?</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/_tmd0j3AyE4?si=GVOF1IXL22O3oIyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <nav>
+        <a href="#slider4">Anterior</a>
+        <a href="#slider6">Siguiente</a>
+    </nav>
+</section>
+
+<!-- Slide 6: Recursos y cierre -->
+<section id="slider6">
+    <h2>¡Gracias por tu atención!</h2>
+    <p>Más información en sitios oficiales:</p>
+    <ul>
+        <li><a href="https://www.gob.pe/16525-solicitar-orientacion-sobre-el-vih-y-otras-infecciones-de-transmision-sexual-en-establecimientos-de-salud-en-el-peru" target="_blank" style="color:white; text-decoration:underline;">GOB.PE</a></li>
+        <li><a href="https://www.unaids.org/es" target="_blank" style="color:white; text-decoration:underline;">UNAIDS</a></li>
+    </ul>
+    <nav>
+        <a href="#slider5">Anterior</a>
+        <a href="#slider1">Volver al inicio</a>
+    </nav>
+</section>
+
+</body>
+</html>
